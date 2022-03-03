@@ -34,6 +34,7 @@ class Questions extends React.Component {
 
 class AddQuestionButton extends React.Component {
   addQuestion = () => {
+    console.log("adding question");
     this.props.onClick(Math.random().toString(36).substring(7) + "?");
   };
 
