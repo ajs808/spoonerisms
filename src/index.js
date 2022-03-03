@@ -1,10 +1,10 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Layout from "./Layout";
-import About from "./About";
-import Home from "./Home";
-import NoPage from "./NoPage";
+import Layout from "./components/Layout";
+import About from "./components/About";
+import Home from "./components/Home";
+import NoPage from "./components/NoPage";
 
 ReactDOM.render(
   <BrowserRouter>
