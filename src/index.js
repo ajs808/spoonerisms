@@ -4,6 +4,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Layout from "./Layout";
 import About from "./About";
 import Home from "./Home";
+import NoPage from "./NoPage";
 
 ReactDOM.render(
   <BrowserRouter>
@@ -11,6 +12,7 @@ ReactDOM.render(
       <Route path="/" element={<Layout />}>
         <Route index element={<Home />} />
         <Route path="about" element={<About />} />
+        <Route path="*" element={<NoPage />} />
       </Route>
     </Routes>
   </BrowserRouter>,
