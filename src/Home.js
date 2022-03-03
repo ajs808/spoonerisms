@@ -4,10 +4,9 @@ import Container from "react-bootstrap/Container";
 import Stack from "react-bootstrap/Stack";
 import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
-import NavDropdown from "react-bootstrap/NavDropdown";
 import "bootstrap/dist/css/bootstrap.min.css";
 
-function Content() {
+function Home() {
   return (
     <div>
       <Stack gap={3}>
@@ -37,4 +36,4 @@ function Content() {
   );
 }
 
-export default Content;
+export default Home;
