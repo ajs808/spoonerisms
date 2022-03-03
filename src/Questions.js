@@ -1,5 +1,7 @@
 import React from "react";
 import Button from "react-bootstrap/Button";
+import ListGroup from "react-bootstrap/ListGroup";
+import Stack from "react-bootstrap/Stack";
 
 import "bootstrap/dist/css/bootstrap.min.css";
 
@@ -17,12 +19,14 @@ class Questions extends React.Component {
   render() {
     return (
       <div id="questions">
-        <AddQuestionButton onClick={this.addQuestion} />
-        <ol id="quesitonsList">
-          {this.state.questions.map((question) => (
-            <li id="oneQuestion"> {question} </li>
-          ))}
-        </ol>
+        <Stack gap={3}>
+          <AddQuestionButton onClick={this.addQuestion} />
+          <ListGroup id="quesitonsList">
+            {this.state.questions.map((question) => (
+              <ListGroup.Item id="oneQuestion"> {question} </ListGroup.Item>
+            ))}
+          </ListGroup>
+        </Stack>
       </div>
     );
   }
