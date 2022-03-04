@@ -5,7 +5,7 @@ import Stack from "react-bootstrap/Stack";
 
 import "bootstrap/dist/css/bootstrap.min.css";
 
-class Questions extends React.Component {
+class Output extends React.Component {
   state = {
     questions: [],
   };
@@ -49,4 +49,4 @@ class AddQuestionButton extends React.Component {
   }
 }
 
-export default Questions;
+export default Output;

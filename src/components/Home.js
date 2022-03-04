@@ -1,5 +1,5 @@
 import Button from "react-bootstrap/Button";
-import Questions from "./Questions";
+import Output from "./Output";
 import Container from "react-bootstrap/Container";
 import Stack from "react-bootstrap/Stack";
 import "bootstrap/dist/css/bootstrap.min.css";
@@ -14,7 +14,7 @@ function Home() {
           <div>
             <Button variant="primary">Generate spoonerism</Button>
           </div>
-          <Questions />
+          <Output />
         </Stack>
       </Container>
     </div>
