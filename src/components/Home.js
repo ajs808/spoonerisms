@@ -8,7 +8,7 @@ function Home() {
   return (
     <div>
       <Container fluid="xxl" className="py-3">
-        <h1>Spoonerism</h1>
+        <h1>Spooner</h1>
         <p>Lorem ipsum dolor sit amet, consectetaur adipisicing elit, s</p>
         <Stack gap={3}>
           <div>
