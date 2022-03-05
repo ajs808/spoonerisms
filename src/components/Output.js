@@ -2,13 +2,29 @@ import React from "react";
 import Button from "react-bootstrap/Button";
 import ListGroup from "react-bootstrap/ListGroup";
 import Stack from "react-bootstrap/Stack";
+import words from "../data/valid-common-4.txt";
 
 import "bootstrap/dist/css/bootstrap.min.css";
+
+var wordList = [];
+
+function example() {
+  console.log("Example fnc");
+}
 
 class Output extends React.Component {
   state = {
     questions: [],
   };
+
+  componentDidMount() {
+    fetch(words)
+      .then((r) => r.text())
+      .then((text) => {
+        wordList = text.split("\n");
+        console.log(wordList);
+      });
+  }
 
   generateSpoonerism = (question) => {
     this.setState((prevState) => ({
@@ -34,8 +50,7 @@ class Output extends React.Component {
 
 class GenerateSpoonerismButton extends React.Component {
   generateSpoonerism = () => {
-    console.log("generating spoonerism");
-    this.props.onClick(Math.random().toString(36).substring(7) + "?");
+    this.props.onClick(wordList[Math.floor(Math.random() * wordList.length)]);
   };
 
   render() {
