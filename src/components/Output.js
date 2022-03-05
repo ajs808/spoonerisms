@@ -7,6 +7,26 @@ import words from "../data/valid-common-4.txt";
 import "bootstrap/dist/css/bootstrap.min.css";
 
 var wordList = [];
+var wordPairs = [];
+var spoonPairs = [];
+
+function createPairs() {
+  // let out1 = "";
+  // let out2 = "";
+  let out = [];
+  for (let i = 0; i < wordList.length; i++) {
+    for (let j = 0; j < wordList.length; j++) {
+      if (i !== j) {
+        console.log(wordList[i]);
+        wordPairs.push([wordList[i], wordList[j]]);
+      }
+    }
+  }
+
+  for (let i = 0; i < wordPairs.length; i++) {
+    console.log(wordPairs[i][0] + "-" + wordPairs[i][1]);
+  }
+}
 
 class Output extends React.Component {
   state = {
@@ -18,8 +38,10 @@ class Output extends React.Component {
       .then((r) => r.text())
       .then((text) => {
         wordList = text.split("\n");
-        console.log(wordList);
+        console.log(wordList.length);
       });
+    console.log("mounted");
+    createPairs();
   }
 
   generateSpoonerism = (question) => {
@@ -33,7 +55,7 @@ class Output extends React.Component {
       <div id="questions">
         <Stack gap={3}>
           <GenerateSpoonerismButton onClick={this.generateSpoonerism} />
-          <ListGroup id="quesitonsList">
+          <ListGroup id="spoonerismsList">
             {this.state.questions.map((question) => (
               <ListGroup.Item id="oneQuestion"> {question} </ListGroup.Item>
             ))}
