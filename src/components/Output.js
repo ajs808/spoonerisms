@@ -10,7 +10,7 @@ class Output extends React.Component {
     questions: [],
   };
 
-  addQuestion = (question) => {
+  generateSpoonerism = (question) => {
     this.setState((prevState) => ({
       questions: [...prevState.questions, question],
     }));
@@ -20,7 +20,7 @@ class Output extends React.Component {
     return (
       <div id="questions">
         <Stack gap={3}>
-          <AddQuestionButton onClick={this.addQuestion} />
+          <GenerateSpoonerismButton onClick={this.generateSpoonerism} />
           <ListGroup id="quesitonsList">
             {this.state.questions.map((question) => (
               <ListGroup.Item id="oneQuestion"> {question} </ListGroup.Item>
@@ -32,16 +32,16 @@ class Output extends React.Component {
   }
 }
 
-class AddQuestionButton extends React.Component {
-  addQuestion = () => {
-    console.log("adding question");
+class GenerateSpoonerismButton extends React.Component {
+  generateSpoonerism = () => {
+    console.log("generating spoonerism");
     this.props.onClick(Math.random().toString(36).substring(7) + "?");
   };
 
   render() {
     return (
-      <div id="addQuestionButton">
-        <Button id="addQuestionButton" onClick={this.addQuestion}>
+      <div id="generateSpoonerismButton">
+        <Button id="generateSpoonerismButton" onClick={this.generateSpoonerism}>
           Add Question
         </Button>
       </div>
