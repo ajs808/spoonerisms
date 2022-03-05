@@ -6,26 +6,25 @@ import words from "../data/valid-common-4.txt";
 
 import "bootstrap/dist/css/bootstrap.min.css";
 
-var wordList = [];
 var wordPairs = [];
-var spoonPairs = [];
 
-function createPairs() {
-  // let out1 = "";
-  // let out2 = "";
-  let out = [];
-  for (let i = 0; i < wordList.length; i++) {
-    for (let j = 0; j < wordList.length; j++) {
-      if (i !== j) {
-        console.log(wordList[i]);
-        wordPairs.push([wordList[i], wordList[j]]);
+function createPairs(list) {
+  for (let i = 0; i < list.length; i++) {
+    for (let j = 0; j < list.length; j++) {
+      if (
+        i !== j &&
+        list.includes(list[i].charAt(0) + list[j].substring(1)) &&
+        list.includes(list[j].charAt(0) + list[i].substring(1))
+      ) {
+        wordPairs.push([list[i], list[j]]);
       }
     }
   }
 
-  for (let i = 0; i < wordPairs.length; i++) {
-    console.log(wordPairs[i][0] + "-" + wordPairs[i][1]);
-  }
+  // for (let i = 0; i < wordPairs.length; i++) {
+  //   console.log(wordPairs[i][0] + "-" + wordPairs[i][1]);
+  // }
+  console.log(wordPairs.length);
 }
 
 class Output extends React.Component {
@@ -34,14 +33,13 @@ class Output extends React.Component {
   };
 
   componentDidMount() {
+    let wordList = [];
     fetch(words)
       .then((r) => r.text())
       .then((text) => {
         wordList = text.split("\n");
-        console.log(wordList.length);
+        createPairs(wordList);
       });
-    console.log("mounted");
-    createPairs();
   }
 
   generateSpoonerism = (question) => {
@@ -68,7 +66,21 @@ class Output extends React.Component {
 
 class GenerateSpoonerismButton extends React.Component {
   generateSpoonerism = () => {
-    this.props.onClick(wordList[Math.floor(Math.random() * wordList.length)]);
+    console.log(wordPairs.length);
+    let i = Math.floor(Math.random() * wordPairs.length);
+    let w1 = wordPairs[i][0];
+    let w2 = wordPairs[i][1];
+    this.props.onClick(
+      w1 +
+        ":" +
+        w2 +
+        " > " +
+        w2.charAt(0) +
+        w1.substring(1) +
+        ":" +
+        w1.charAt(0) +
+        w2.substring(1)
+    );
   };
 
   render() {
