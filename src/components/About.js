@@ -49,7 +49,8 @@ function About() {
           brute-forcing for now) we will have to generate{" "}
           <Latex>$n(n-1) \div 2$</Latex>, with each pair's validation taking up
           to <Latex>$2n$</Latex> operations, we're already looking at a time
-          complexity of <Latex>$O(n^3)$</Latex>. Not ideal.
+          complexity of <Latex>$O(n^3)$</Latex>. Not ideal, especially when
+          working with potentially large sets of words.
         </p>
         <p>
           This is where <i>prefix trees</i> become useful!
