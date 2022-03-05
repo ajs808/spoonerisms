@@ -8,10 +8,6 @@ import "bootstrap/dist/css/bootstrap.min.css";
 
 var wordList = [];
 
-function example() {
-  console.log("Example fnc");
-}
-
 class Output extends React.Component {
   state = {
     questions: [],
@@ -57,7 +53,7 @@ class GenerateSpoonerismButton extends React.Component {
     return (
       <div id="generateSpoonerismButton">
         <Button id="generateSpoonerismButton" onClick={this.generateSpoonerism}>
-          Add Question
+          Generate spoonerism
         </Button>
       </div>
     );

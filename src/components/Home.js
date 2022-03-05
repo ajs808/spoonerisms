@@ -11,9 +11,6 @@ function Home() {
         <h1>Spooner</h1>
         <p>Lorem ipsum dolor sit amet, consectetaur adipisicing elit, s</p>
         <Stack gap={3}>
-          <div>
-            <Button variant="primary">Generate spoonerism</Button>
-          </div>
           <Output />
         </Stack>
       </Container>
