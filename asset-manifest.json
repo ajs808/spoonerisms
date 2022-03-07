@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/spooner.arulsaxena.com/static/css/main.1a8a0596.css",
-    "main.js": "/spooner.arulsaxena.com/static/js/main.7d03362c.js",
-    "index.html": "/spooner.arulsaxena.com/index.html",
-    "static/media/valid-common-4.txt": "/spooner.arulsaxena.com/static/media/valid-common-4.8dca1f3783b8adc900f1.txt",
-    "main.1a8a0596.css.map": "/spooner.arulsaxena.com/static/css/main.1a8a0596.css.map",
-    "main.7d03362c.js.map": "/spooner.arulsaxena.com/static/js/main.7d03362c.js.map"
+    "main.css": "/static/css/main.1a8a0596.css",
+    "main.js": "/static/js/main.ba4f6a05.js",
+    "index.html": "/index.html",
+    "static/media/valid-common-4.txt": "/static/media/valid-common-4.8dca1f3783b8adc900f1.txt",
+    "main.1a8a0596.css.map": "/static/css/main.1a8a0596.css.map",
+    "main.ba4f6a05.js.map": "/static/js/main.ba4f6a05.js.map"
   },
   "entrypoints": [
     "static/css/main.1a8a0596.css",
-    "static/js/main.7d03362c.js"
+    "static/js/main.ba4f6a05.js"
   ]
 }
