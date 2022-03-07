@@ -13,6 +13,8 @@ function createPairs(list) {
     for (let j = 0; j < list.length; j++) {
       if (
         i !== j &&
+        list[i][0] != list[j][0] &&
+        list[i].substring(1) != list[j].substring(1) &&
         list.includes(list[i].charAt(0) + list[j].substring(1)) &&
         list.includes(list[j].charAt(0) + list[i].substring(1))
       ) {
