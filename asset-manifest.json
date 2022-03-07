@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/spooner/static/css/main.1a8a0596.css",
+    "main.js": "/spooner/static/js/main.bb1dc40e.js",
+    "index.html": "/spooner/index.html",
+    "static/media/valid-common-4.txt": "/spooner/static/media/valid-common-4.8dca1f3783b8adc900f1.txt",
+    "main.1a8a0596.css.map": "/spooner/static/css/main.1a8a0596.css.map",
+    "main.bb1dc40e.js.map": "/spooner/static/js/main.bb1dc40e.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.1a8a0596.css",
+    "static/js/main.bb1dc40e.js"
+  ]
+}
