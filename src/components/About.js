@@ -52,9 +52,9 @@ function About() {
           complexity of <Latex>$O(n^3)$</Latex>. Not ideal, especially when
           working with potentially large sets of words.
         </p>
-        <p>
+        {/* <p>
           This is where <i>prefix trees</i> become useful!
-        </p>
+        </p> */}
       </Container>
     </div>
   );
