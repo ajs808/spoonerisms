@@ -28,9 +28,10 @@ function About() {
         <p>
           Let's start with the simpler type: <i>orthographic</i> or{" "}
           <i>spelling-based</i> spoonerisms, as opposed to{" "}
-          <i>pronunciation-based</i> spoonerisms. Out of our examples, only the
-          third is not an orthographic spoonerism, so no shoving leopards
-          (yet?).
+          <i>pronunciation-based</i> spoonerisms (this app only generates four
+          letter orthographic spoonerisms from a select set of words, for now at
+          least). Out of our examples, only the third is not an orthographic
+          spoonerism, so no shoving leopards.
         </p>
         <p>
           And from the simpler of the two types let's dumb it down even further
