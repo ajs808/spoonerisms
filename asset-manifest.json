@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/spooner/static/css/main.1a8a0596.css",
-    "main.js": "/spooner/static/js/main.bb1dc40e.js",
-    "index.html": "/spooner/index.html",
-    "static/media/valid-common-4.txt": "/spooner/static/media/valid-common-4.8dca1f3783b8adc900f1.txt",
-    "main.1a8a0596.css.map": "/spooner/static/css/main.1a8a0596.css.map",
-    "main.bb1dc40e.js.map": "/spooner/static/js/main.bb1dc40e.js.map"
+    "main.css": "/spoonerisms/static/css/main.1a8a0596.css",
+    "main.js": "/spoonerisms/static/js/main.5ec39387.js",
+    "index.html": "/spoonerisms/index.html",
+    "static/media/valid-common-4.txt": "/spoonerisms/static/media/valid-common-4.8dca1f3783b8adc900f1.txt",
+    "main.1a8a0596.css.map": "/spoonerisms/static/css/main.1a8a0596.css.map",
+    "main.5ec39387.js.map": "/spoonerisms/static/js/main.5ec39387.js.map"
   },
   "entrypoints": [
     "static/css/main.1a8a0596.css",
-    "static/js/main.bb1dc40e.js"
+    "static/js/main.5ec39387.js"
   ]
 }
